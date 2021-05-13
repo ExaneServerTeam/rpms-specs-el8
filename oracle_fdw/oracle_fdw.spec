@@ -89,6 +89,12 @@ make installcheck PG_CONFIG=%{pginstdir}/bin/pg_config %{?_smp_mflags} PGUSER=po
 %{pginstdir}/doc/extension/README.%{sname}
 
 %changelog
+* Thu May 13 2021 Exane Server Team <equipe_serveurs@exane.com> 2.3.0-1
+- Update to 2.3.0
+- enforce header path (if not supported by oracle_fdw)
+- symply use $PATH to find pg_config in order to remove the patch
+- rename package to include the instantclient version
+
 * Wed Sep 28 2016 Devrim Gündüz <devrim@gunduz.org> 1.5.0-1
 - Update to 1.5.0
 
